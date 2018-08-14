@@ -1,1 +1,14 @@
 /* pages/form/form.wxss */
+.formWord{
+  margin-left: 10px;
+}
+.formRow{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction:column wrap; /*多行布局*/
+  justify-content:center;
+}
+.container{
+  background-color: #aaa;
+}

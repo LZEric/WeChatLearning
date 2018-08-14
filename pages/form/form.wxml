@@ -1,5 +1,45 @@
 <!--pages/form/form.wxml-->
-<!-- <text>这就是你</text>
 <view>
-  <image src='https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1533115173&di=a68de2e4cc77c3503eb159da493272d5&src=http://pic.noyes.cn/d/file/app/14/34/ilszsdbtpgu568821.jpg'></image>
-</view> -->
+  <form bindsubmit='submit' bindreset='reset'>
+    <view>
+      <text class='formWord'>账号:</text>
+      <input name="account" placeholder='Account here' confirm-type='next' focus='true'></input> <!--focus意思是刚进入页面时，光标所在位置-->
+      <text>\n</text>
+      <text class='formWord'>密码:</text>
+      <input name="account" placeholder='Password here' password='true' type="number" confirm-type='done'></input>
+      <text>\n</text>
+    </view>
+    <view>
+        <checkbox-group name="checkbox" bindchange="checkboxChange">
+            <label><checkbox value="第一个"/>选择一</label>
+            <label><checkbox value="第二个"/>选择二</label>
+        </checkbox-group>
+        <text>\n</text>
+        <text>wxs处理型 \n\n</text>
+        <checkbox-group name="checkbox" bindchange="checkboxChange">
+            <label wx:for-items="{{items}}"><checkbox value="{{item.name}}" checked='{{item.checked}}'/>{{item.value}}</label>
+        </checkbox-group>
+        <text>\n</text>
+    </view>
+    <view>
+        <radio-group name="radio-group">
+            <label><radio value="radio1"/>男</label>
+            <label><radio value="radio2"/>女</label>
+        </radio-group>
+        <text>\n</text>
+    </view>
+    <view>
+        <switch name="switch"/>
+        <text>\n</text>
+    </view>
+    <view>
+        <slider name="slider" show-value ></slider>
+        <text>\n</text>
+    </view>
+    <view>
+        <button type="primary" bindtap='jumpToNext'>下一步</button>
+        <text>\n</text>
+        <button formType="reset">重置</button>
+    </view>
+  </form>
+</view>

@@ -75,4 +75,9 @@ Page({
       url: '../form/form',
     })
   },
+  jumpToFor: function (param) {
+    wx.navigateTo({
+      url: '../for/for',
+    })
+  },
 })

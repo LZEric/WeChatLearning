@@ -1,16 +1,10 @@
-// pages/form/form.js
+// pages/for/for.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    items:[
-      { name: 'USA', value: '美国' },
-      { name: 'CHN', value: '中国', checked: 'true'},
-      { name: 'BRA', value: '巴西' },
-      { name: 'JPN', value: '日本' },
-    ]
   
   },
 
@@ -18,9 +12,9 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+  
   },
- 
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
@@ -68,21 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
   
-  },
-  /* 表单提交和重置 */
-  submit:function(e){
-    console.log('form发生了submit事件，携带数据为：', e.detail.value)
-  },
-  reset:function(e){
-    console.log('form发生了reset事件')
-  },
-  checkboxChange:function(e){
-    console.log('选择了：', e.detail.value)
-  },
-  /* 跳转  */
-  jumpToNext: function (param) {
-    wx.navigateTo({
-      url: '../form/picker/picker',
-    })
-  },
+  }
 })
