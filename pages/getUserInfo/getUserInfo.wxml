@@ -1,0 +1,11 @@
+<!--pages/getUserInfo/getUserInfo.wxml-->
+<text>用户信息\n\n</text>
+<text class='content'>用户昵称：{{userInfo.nickName}}\n</text>
+<text class='content'>头像链接：{{userInfo.avatarUrl}}\n</text>
+<text class='content'>性别：{{userInfo.gender}}（0：未知、1：男、2：女）\n</text>
+<text class='content'>省：{{userInfo.province}}\n</text>
+<text class='content'>市：{{userInfo.city}}\n</text>
+<text class='content'>区：{{userInfo.country}}\n</text>
+<text>系统信息\n\n</text>
+<text class='content'>手机型号：{{systemInfo.model}}\n</text>
+<text class='content'>手机系统：{{systemInfo.system}}\n</text>

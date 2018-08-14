@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/form/form",
+    "pages/getUserInfo/getUserInfo",
+    "pages/functions/functions"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "微信小程序学习之旅",
+    "navigationBarTextStyle": "black"
+  }
+}

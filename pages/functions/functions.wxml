@@ -1,0 +1,15 @@
+<!--pages/functions/functions.wxml-->
+<text class='title'>基础知识运用</text>
+<view class='container'>
+  <view class='btn'>
+    <button class='defaultBtn' type='primary' bindtap='jumpToUserInfo'>获取用户及手机信息</button>
+    <text>\n</text>
+  </view>
+  <view class='btn'>
+    <button class='defaultBtn' type='primary' bindtap='jumpToForm'>表单提交</button>
+    <text>\n</text>
+  </view>
+  <view class='btn'>
+    <button class='defaultBtn' type='default' bindtap='jumpToNext'>下一节</button>
+  </view>
+</view>
